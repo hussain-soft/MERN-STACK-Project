@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.about-container {
+  display: grid;
+  grid-template-columns: 9rem 14fr 9rem;
+}
+.about-form {
+  display: grid;
+  grid-template-columns: 1.7fr 1fr 4.7fr;
+}
+.detail-container {
+  padding-top: 20px;
+  grid-column: 3/4;
+}
+.row-carrier {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+}
+.row {
+  grid-column: 1/2;
+}
+.row-opp {
+  grid-column: 2/3;
+}

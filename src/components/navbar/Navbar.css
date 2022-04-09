@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+nav {
+  display: grid;
+  /* grid-row: 2/3;
+  grid-column: 2/3; */
+  grid-template-columns: 9rem 14fr 9rem;
+  grid-template-rows: 4rem 9rem 9rem;
+}
+.heading {
+  font-size: 40px;
+  grid-column: 2/3;
+  grid-row: 2/3;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 2px solid black;
+  border-radius: 2px;
+  background-color: coral;
+}
+.list-container {
+  display: grid;
+  grid-column: 2/3;
+  grid-row: 3/4;
+  margin-bottom: 20px;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.213);
+}
+.list-container ul {
+  font-size: 20px;
+  font-weight: 50%;
+  text-transform: capitalize;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.list-container ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px 30px;
+}
+
+/* <------ Nav Transition Start------> */
+.list-container ul li a {
+  position: relative;
+  padding: 6px 0;
+  color: black;
+}
+.list-container ul li a:before {
+  content: "";
+  background: black;
+  position: absolute;
+  height: 2px;
+  width: 0;
+  bottom: 0;
+  left: 0;
+  transition: all 0.4s ease;
+}
+.list-container ul li a:hover:before {
+  width: 100%;
+  /* left: 50%; if add line 75 and 76 new transition 
+    transform: translateX(-50%); */
+}
+@media (max-width: 768px) {
+  .nav-container {
+    float: none;
+    width: 100%;
+  }
+  .heading {
+    float: none;
+    width: 100%;
+  }
+}

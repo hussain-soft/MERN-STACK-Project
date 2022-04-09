@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.form-div {
+  display: grid;
+  grid-template-columns: 9rem 14fr 9rem;
+  grid-template-rows: 40rem;
+  /* background-color: darkgrey; */
+}
+form {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  border-radius: 12px;
+  background: #e0e0e0;
+  box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+}
+.img-div img {
+  width: 15vh;
+  height: 15vh;
+}
